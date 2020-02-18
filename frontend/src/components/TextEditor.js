@@ -146,6 +146,40 @@ const RichTextEditor = () => {
       type: 'paragraph',
       children: [{ text: 'Uma linha de texto em um paragrafo!' }],
     },
+      {
+        type: 'paragraph',
+        children: [
+          { text: 'Este é um ' },
+          { text: 'texto', bold: true },
+          { text: ' editável, ' },
+          { text: 'muito', italic: true },
+          { text: ' melhor que um ' },
+          { text: '<textarea>', code: true },
+          { text: '!' },
+        ],
+      },
+      {
+        type: 'paragraph',
+        children: [
+          {
+            text:
+              "Como é um texto editável, você pode fazer coisas, como transformar uma seleção em ",
+          },
+          { text: 'negrito', bold: true },
+          {
+            text:
+              ', ou adicionar uma citação no meio da página, da seguinte maneira:',
+          },
+        ],
+      },
+      {
+        type: 'block-quote',
+        children: [{ text: 'Uma citação sábia!' }],
+      },
+      {
+        type: 'paragraph',
+        children: [{ text: 'Tente você mesmo!' }],
+      },
   ]);
   return (
     <Slate editor={editor} value={value} onChange={value => setValue(value)}>
