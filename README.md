@@ -5,4 +5,6 @@ O objetivo de um editor de texto é reduzir o esforço para os usuários que ten
 
 Todo mundo já usou um editor de texto em algum momento. Então, por que não construir um?
 
-![](frontend/public/texto-editavel.gif)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/rodmessias/editor-texto/master/frontend/public/texto-editavel.gif" width="640">
+</p>
